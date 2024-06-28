@@ -15,5 +15,6 @@ cd /srv/strapi
 chmod +x generate_env_var.sh
 ./generate_env_var.sh
 npm install
+npm run build
 # Start the Strapi application using pm2
-pm2 start npm --name "strapi" -- run develop
+pm2 start npm --name "strapi" -- start
