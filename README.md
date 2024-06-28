@@ -33,13 +33,20 @@ Edit the `backend.tf` file to include your S3 bucket details:
 ```hcl
 terraform {
   backend "s3" {
-    bucket = "my-terraform-state-bucket"  # Replace with your S3 bucket name
+    bucket = "you-bucket-name"  # Replace with your S3 bucket name
     key    = "Strapi/terraform.tfstate"  # Replace with your desired path
     region = "us-west-1"                  # Replace with your S3 bucket region
   }
 }
 ```
+Edit the `variables.tf` file to include your S3 bucket details:
 
+```hcl
+variable "my_s3_bucket" {
+    type = string
+    default = "your-bucket-name"
+}
+```
 ## GitHub Actions Workflow
 
 This repository includes a GitHub Actions workflow to apply or destroy the Terraform configuration. You can manually trigger the workflow from the "Actions" tab in your GitHub repository.
