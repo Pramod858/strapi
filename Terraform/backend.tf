@@ -1,7 +1,9 @@
-terraform {
-  backend "s3" {
-    bucket = "pramod858tf"
-    key    = "Strapi/terraform.tfstate"
-    region = "us-east-1"
-  }
+variable "instance_type" {
+    type = string
+    default = "t2.medium"
+}
+
+variable "my_s3_bucket" {
+    type = string
+    default = "pramod858tf"
 }
