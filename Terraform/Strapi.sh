@@ -2,7 +2,7 @@
 
 # Update and install necessary packages
 sudo apt-get update
-sudo apt-get install -y docker.io
+sudo apt install docker.io -y
 
 # Clone your Git repository (adjust the URL accordingly)
 git clone -b devops https://github.com/Pramod858/simple-strapi.git
