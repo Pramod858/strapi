@@ -7,11 +7,14 @@ sudo apt install docker.io -y
 #  Change docker permissions
 sudo chmod 666 /var/run/docker.sock
 
+# Create dir
+mkdir strapi
+
 # Clone your Git repository (adjust the URL accordingly)
-git clone https://github.com/Pramod858/simple-strapi.git
+git clone https://github.com/Pramod858/simple-strapi.git strapi
 
 # Navigate to the directory with Dockerfile
-cd /home/ubuntu/simple-strapi
+cd /home/ubuntu/strapi
 
 # Build the Docker image
 docker build -t strapi .
