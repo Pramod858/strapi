@@ -8,7 +8,7 @@ sudo apt install docker.io -y
 sudo chmod 666 /var/run/docker.sock
 
 # Clone your Git repository (adjust the URL accordingly)
-git clone -b devops https://github.com/Pramod858/simple-strapi.git
+git clone https://github.com/Pramod858/simple-strapi.git
 
 # Navigate to the directory with Dockerfile
 cd /home/ubuntu/simple-strapi
